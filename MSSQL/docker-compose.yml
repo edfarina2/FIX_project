@@ -1,0 +1,23 @@
+services: 
+  mssql:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: mssql_image
+    volumes:
+      - .:/app
+    container_name: mssql
+    environment:
+      - SA_PASSWORD=<YourStrong@Passw0rd>
+      - ACCEPT_EULA=Y
+    ports:
+      - 1433:1433
+    expose:
+      - 1433
+    networks:
+      - default
+networks:
+  default:
+    name: network-example
+    external: true
+

@@ -1,0 +1,8 @@
+node_modules/
+uploadsTRY/
+uploads/
+.DS_Store
+config.js
+world.json
+loginURL.js
+url_plat.js
