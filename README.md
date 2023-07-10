@@ -2,17 +2,17 @@
 
 ### General Info
 ***
-The repository is composed of 3 subdirectories, discussed indipendently in the following.
+The repository is composed of 3 subdirectories, discussed independently in the following.
 
 ## MSSQL
 ***
 
 The MSSQL subdirectory contains the Docker composer for setting-up the MSSQL Database.
-In order to create the database, it is, first, required to create a bridge docker network with the following ocmmand:
+In order to create the database, it is, first, required to create a bridge docker network with the following command:
 ```
 docker network create network-example
 ```
-If successful, to proceed with the start of the Database, type the follwing:
+If successful, to proceed with the start of the Database, type the following command:
 ```
 docker compose up -d
 ```
@@ -30,8 +30,8 @@ The Database exposes port 1433.
 ## WebApp
 ***
 
-The WebApp subdirectory conntains the NodeJs/AngularJs interface to interact with the database.
-In order to run it, the Docker should be started with the followin command:
+The WebApp subdirectory contains the NodeJs/AngularJs interface to interact with the database.
+In order to run it, the Docker should be started with the following command:
 ```
 docker compose up -d
 ```
@@ -47,5 +47,3 @@ In particular, to parse and load the FIX log provided for this exercise, use the
 python File_LOAD_DB.py
 ```
 It requires Python 3.X
-
-
